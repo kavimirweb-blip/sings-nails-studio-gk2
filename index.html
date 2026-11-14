@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sings' | Nails, Lashes &amp; Brows, Greater Kailash II</title>
+<meta name="description" content="Concept website for Sings' The Nails & Lashes Studio, Greater Kailash II: luxury nails, lashes, brows, face yoga and microblading.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Brief — Sings', GK-II M Block. Luxury nail, lash & brow studio, with training. Personality: soft, polished, a little editorial.
+   One idea: every set is a small work of art — the real photographs sit loose on a marble-pink table and fan out when you reach for them. */
+:root{--bg:#FBF3EE;--rose:#D2849A;--wine:#3A2230;--mute:#85707A;--blush:#F2DDD8;--ease:cubic-bezier(.2,.7,.2,1);--serif:'Bodoni Moda',Georgia,serif;--sans:'Figtree',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;overflow-x:clip}
+body{background:var(--bg);color:var(--wine);font-family:var(--sans);line-height:1.65;overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,52px)}
+.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1}.serif em{font-style:italic;color:var(--rose)}
+.ov{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--rose);font-weight:500}
+nav{position:fixed;inset:0 0 auto 0;z-index:40;display:flex;justify-content:space-between;align-items:center;padding:18px clamp(18px,4vw,52px);transition:.4s}
+nav.s{background:rgba(251,243,238,.9);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(58,34,48,.08)}
+.lg{font:italic 500 32px/1 var(--serif)}.lg small{font:400 8.5px var(--sans);letter-spacing:.3em;text-transform:uppercase;display:block;font-style:normal;margin-top:4px;color:var(--rose)}
+.nl{display:flex;gap:32px;font-size:13px;letter-spacing:.12em;text-transform:uppercase}.nl a{opacity:.7;transition:.3s}.nl a:hover{opacity:1;color:var(--rose)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:99px;background:var(--wine);color:#fff;font-weight:500;font-size:13px;letter-spacing:.1em;text-transform:uppercase;transition:.4s var(--ease)}
+.btn:hover{background:var(--rose);transform:translateY(-3px)}.btn.o{background:transparent;color:var(--wine);box-shadow:inset 0 0 0 1.3px var(--wine)}.btn.o:hover{background:var(--wine);color:#fff}
+/* hero */
+.hero{min-height:100svh;padding:120px 0 70px;display:grid;align-items:center;background:radial-gradient(60% 60% at 80% 30%,var(--blush),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(24px,5vw,80px);align-items:center}
+.hero h1{font-size:clamp(58px,9vw,150px)}.hero p.lead{margin:26px 0 32px;max-width:420px;font-size:18px;color:var(--mute)}
+.table{position:relative;aspect-ratio:1/1.05}
+.pol{position:absolute;background:#fff;padding:10px 10px 36px;box-shadow:0 30px 60px -26px rgba(58,34,48,.5);transition:transform .8s var(--ease);width:46%}
+.pol img{width:100%;aspect-ratio:1;object-fit:cover}.pol span{position:absolute;left:12px;bottom:10px;font:italic 500 14px var(--serif)}
+.p1{left:2%;top:2%;transform:rotate(-7deg)}.p2{right:0;top:8%;transform:rotate(6deg)}.p3{left:8%;bottom:2%;transform:rotate(4deg)}.p4{right:6%;bottom:0;transform:rotate(-5deg)}
+.table:hover .p1{transform:rotate(-12deg) translate(-14px,-10px)}.table:hover .p2{transform:rotate(11deg) translate(14px,-6px)}.table:hover .p3{transform:rotate(-1deg) translate(-8px,12px)}.table:hover .p4{transform:rotate(-9deg) translate(12px,10px)}
+.pol:hover{z-index:5;transform:rotate(0) scale(1.06)!important}
+/* menu */
+section{padding:clamp(70px,11vw,150px) 0}
+.sh{text-align:center;margin-bottom:60px}.sh h2{font-size:clamp(44px,7vw,104px);margin-top:16px}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(58,34,48,.2)}
+.col{padding:38px 32px 42px;border-right:1px solid rgba(58,34,48,.2);transition:background .5s}.col:last-child{border:0}.col:hover{background:var(--blush)}
+.col h3{font:italic 400 44px/1 var(--serif);margin-bottom:6px}.col .n{font-size:11px;letter-spacing:.24em;color:var(--rose)}
+.col ul{list-style:none;margin-top:22px;display:grid;gap:0}.col li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-top:1px solid rgba(58,34,48,.12);font-size:16px}.col li small{color:var(--mute);font-size:13px}
+/* feature */
+.feat{background:var(--wine);color:#F7E9E4}
+.feat .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,100px);align-items:center}
+.feat h2{font-size:clamp(46px,6.6vw,98px);margin:16px 0 24px}.feat h2 em{color:#E9A7B9}.feat p{color:#D9C2C2;max-width:430px}
+.feat .big{aspect-ratio:4/5;overflow:hidden;border-radius:220px 220px 10px 10px}.feat .big img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}.feat .big:hover img{transform:scale(1.06)}
+.stats{display:flex;gap:42px;margin-top:34px;flex-wrap:wrap}.stats b{display:block;font:italic 400 52px/1 var(--serif);color:#E9A7B9}.stats span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D9C2C2}
+/* training + book */
+.train .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,100px);align-items:center}
+.train h2{font-size:clamp(42px,6vw,88px);margin:16px 0 20px}.train p{max-width:430px;color:var(--mute)}
+.train .im{display:grid;grid-template-columns:1fr 1fr;gap:14px}.train .im img{width:100%;aspect-ratio:3/4;object-fit:cover}.train .im img:nth-child(2){margin-top:56px}
+.book{background:var(--blush)}.book .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,100px);align-items:center}
+.book h2{font-size:clamp(50px,8vw,120px)}form{display:grid;gap:18px;background:#fff;padding:clamp(24px,3vw,40px);box-shadow:0 30px 70px -34px rgba(58,34,48,.4)}
+form label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);display:grid;gap:8px}form input,form select{border:0;border-bottom:1px solid rgba(58,34,48,.25);background:transparent;font:400 18px var(--sans);color:var(--wine);padding:8px 0;outline:0}form input:focus,form select:focus{border-color:var(--rose)}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:18px}form button{border:0;cursor:pointer;justify-content:center;font-family:var(--sans)}
+footer{background:var(--wine);color:#D9C2C2;padding:44px 0 120px;font-size:13px}footer .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}footer a:hover{color:#E9A7B9}
+.tag{font-size:11px;color:var(--mute);margin-top:14px}.bar{display:none}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}.rv.in{opacity:1;transform:none}
+@media(max-width:900px){.nl{display:none}.hero .wrap,.feat .wrap,.train .wrap,.book .wrap{grid-template-columns:1fr}.table{max-width:460px;margin:0 auto;width:100%}.menu{grid-template-columns:1fr}.col{border-right:0;border-bottom:1px solid rgba(58,34,48,.2);padding:30px 6px}
+.feat .big{max-width:420px}.bar{display:flex;position:fixed;inset:auto 0 0 0;z-index:60;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(251,243,238,.95);backdrop-filter:blur(14px);box-shadow:0 -1px 0 rgba(58,34,48,.1)}.bar a{flex:1;justify-content:center}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav id="nav"><a class="lg" href="#top">Sings’<small>Nails · Lashes · Brows</small></a><div class="nl"><a href="#menu">Menu</a><a href="#training">Training</a><a href="#book">Book</a></div><a class="btn" href="tel:+918826755581">Call</a></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div><p class="ov">Greater Kailash II · M Block Market</p>
+<h1 class="serif" style="margin-top:18px">Every set,<br>a small<br><em>work of art.</em></h1>
+<p class="lead">A luxury studio for nails, lashes and brows. Soft light, patient hands and finishes that photograph as well as they feel.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="#book">Book your set</a><a class="btn o" href="#menu">See the menu</a></div></div>
+<div class="table">
+<figure class="pol p1"><img src="img/french-lips.jpg" alt="French tips with a red lip accent"><span>French kiss</span></figure>
+<figure class="pol p2"><img src="img/pink-marble.jpg" alt="Pink marble almond nails with flowers"><span>Pink marble</span></figure>
+<figure class="pol p3"><img src="img/blue-florals.jpg" alt="Blue 3D flower nails"><span>Forget-me-not</span></figure>
+<figure class="pol p4"><img src="img/ombre.jpg" alt="Soft pink ombre nails"><span>Blush ombré</span></figure>
+</div></div></header>
+
+<section id="menu"><div class="wrap">
+<div class="sh rv"><p class="ov">The menu</p><h2 class="serif">Three <em>crafts.</em></h2></div>
+<div class="menu rv">
+<div class="col"><span class="n">I</span><h3>Nails</h3><ul><li>Gel &amp; extensions<small>Any shape</small></li><li>Hand-painted art<small>Florals, French, ombré</small></li><li>3D &amp; charms<small>Sculpted detail</small></li><li>Manicure &amp; care<small>Classic</small></li></ul></div>
+<div class="col"><span class="n">II</span><h3>Lashes</h3><ul><li>Classic lashes<small>Natural</small></li><li>Volume sets<small>Fuller, softer</small></li><li>Lash lift<small>Curl &amp; tint</small></li><li>Infills<small>Keep it fresh</small></li></ul></div>
+<div class="col"><span class="n">III</span><h3>Brows &amp; face</h3><ul><li>Microblading<small>Hair-stroke detail</small></li><li>Ombré shading<small>Soft powder</small></li><li>Brow tint &amp; shape<small>Quick tidy</small></li><li>Beauty face yoga<small>Sculpt &amp; glow</small></li></ul></div>
+</div></div></section>
+
+<section class="feat"><div class="wrap">
+<div class="rv"><p class="ov" style="color:#E9A7B9">The studio</p><h2 class="serif">Quiet hands,<br><em>loud</em> results.</h2><p>Sings’ is a nails, lashes and brows studio in M Block Market, Greater Kailash II. Every appointment is unhurried, and every set is checked under the light before you leave.</p>
+<div class="stats"><div><b>4.9★</b><span>Google rating</span></div><div><b>5.7k</b><span>Instagram family</span></div><div><b>850+</b><span>Posts shared</span></div></div></div>
+<div class="big rv"><img src="img/blue-florals.jpg" alt="Blue 3D flower nails" loading="lazy"></div>
+</div></section>
+
+<section class="train" id="training"><div class="wrap">
+<div class="rv"><p class="ov">Training</p><h2 class="serif">Learn it from<br>the <em>studio.</em></h2><p>Sings’ also teaches. Small batches, real clients, the same techniques behind the sets you see here. Ask about the next course.</p><div style="margin-top:28px"><a class="btn" href="https://wa.me/918826755581?text=Hi%20Sings%27%2C%20please%20share%20training%20details." target="_blank" rel="noopener">Ask about training</a></div></div>
+<div class="im rv"><img src="img/french-lips.jpg" alt="French nails" loading="lazy"><img src="img/ombre.jpg" alt="Ombre nails" loading="lazy"></div>
+</div></section>
+
+<section class="book" id="book"><div class="wrap">
+<div class="rv"><p class="ov">Reserve</p><h2 class="serif" style="margin-top:16px">Your<br><em>turn.</em></h2><p style="margin-top:18px;max-width:360px;color:var(--mute)">Choose a treatment and a day. WhatsApp opens with the request ready to send. Shop M-45, M Block Market, Greater Kailash II, New Delhi 110048.</p></div>
+<form id="f" class="rv"><label>Treatment<select id="s"><option>Nails: gel &amp; extensions</option><option>Nails: hand-painted art</option><option>Lashes</option><option>Microblading / brows</option><option>Beauty face yoga</option><option>Training enquiry</option></select></label>
+<div class="fr"><label>Day<input type="date" id="d" required></label><label>Time<select id="t"><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label></div>
+<label>Name<input id="n" placeholder="Your name" required></label><button class="btn" type="submit">Request on WhatsApp →</button></form>
+</div></section>
+
+<footer><div class="wrap"><div><b style="color:#fff">Sings’ The Nails &amp; Lashes Studio</b><br>M-45, M Block Market, Greater Kailash II, New Delhi 110048<br><a href="https://www.google.com/maps/search/?api=1&query=Sings+Nails+Lashes+Greater+Kailash+2" target="_blank" rel="noopener">Open in Maps ↗</a></div><div>088267 55581<br><a href="https://www.instagram.com/sings.studio/" target="_blank" rel="noopener">@sings.studio</a></div><div style="max-width:320px;font-size:12px">A concept website made by Kavimir as a sample for Sings’. Photographs are from the studio’s Instagram. Not an official page.</div></div></footer>
+<div class="bar"><a class="btn" href="tel:+918826755581">Call</a><a class="btn o" href="#book">Book</a></div>
+<script>
+const nav=document.getElementById('nav');addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>40),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const dd=document.getElementById('d');dd.min=new Date().toISOString().slice(0,10);
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();open('https://wa.me/918826755581?text='+encodeURIComponent(`Hi Sings', I'd like to book.\nName: ${n.value}\nTreatment: ${s.value}\nDay: ${dd.value} (${t.value})`),'_blank')});
+</script>
+</body></html>
