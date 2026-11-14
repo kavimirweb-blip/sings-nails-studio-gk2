@@ -64,7 +64,7 @@ footer{background:var(--wine);color:#D9C2C2;padding:44px 0 120px;font-size:13px}
 /* ---- nail set try-on (nails only, no hand: nothing to misalign; swap in real photos per shape later) ---- */
 .ty{padding:clamp(70px,11vw,150px) 0}
 #ty-send{border:0;cursor:pointer;font-family:inherit}
-.ty .tg{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,80px);align-items:center}
+.ty .tyg{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,80px);align-items:center}
 .ty h2{font-size:clamp(42px,6.4vw,96px);margin:16px 0 18px}.ty p.tl{max-width:420px}
 .ty .opt{margin-top:26px}.ty .opt h4{font-weight:600;font-size:11px;line-height:1;letter-spacing:.22em;text-transform:uppercase;margin-bottom:11px;opacity:.65}
 .ty .pl{display:flex;flex-wrap:wrap;gap:9px}
@@ -94,7 +94,7 @@ footer{background:var(--wine);color:#D9C2C2;padding:44px 0 120px;font-size:13px}
 .tychr{opacity:.9;animation:tysh 3.8s ease-in-out infinite alternate}@keyframes tysh{from{transform:translateX(-30px)}to{transform:translateX(30px)}}
 .tyswp{animation:tysw 5.5s ease-in-out infinite}@keyframes tysw{0%,55%{transform:translateX(-80px)}100%{transform:translateX(110px)}}
 .tyg1{animation:tytw 1.4s ease-in-out infinite alternate}.tyg2{animation:tytw 2.1s ease-in-out infinite alternate-reverse}@keyframes tytw{from{opacity:.1}to{opacity:1}}
-@media(max-width:900px){.ty .tg{grid-template-columns:1fr}}
+@media(max-width:900px){.ty .tyg{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.tyfl,.tychr,.tyswp,.tyg1,.tyg2{animation:none!important}}
 
 </style>
@@ -123,7 +123,7 @@ footer{background:var(--wine);color:#D9C2C2;padding:44px 0 120px;font-size:13px}
 </div></div></section>
 
 
-<section class="ty" id="try" style="--ty-acc:#C2708A;--ty-line:rgba(58,34,48,.28);--ty-bg:radial-gradient(70% 90% at 30% 20%,#F8E9E4,#EBD2CB 70%);"><div class="wrap tg">
+<section class="ty" id="try" style="--ty-acc:#C2708A;--ty-line:rgba(58,34,48,.28);--ty-bg:radial-gradient(70% 90% at 30% 20%,#F8E9E4,#EBD2CB 70%);"><div class="wrap tyg">
 <div class="rv"><p class="ov">Design your set</p><h2 class="serif">Pick a shape,<br>a colour, a <em>finish.</em></h2><p class="tl">Build the set you have in mind and see it come to life. When it looks right, send it to the studio on WhatsApp and we will confirm a slot.</p>
 <div class="opt"><h4>Shape</h4><div class="pl" id="ty-shape"><button class="on" data-s="almond">Almond</button><button data-s="square">Square</button><button data-s="coffin">Coffin</button><button data-s="stiletto">Stiletto</button></div></div>
 <div class="opt"><h4>Colour</h4><div class="sw" id="ty-col"></div></div>
@@ -170,7 +170,7 @@ let h=`<defs>
 <linearGradient id="tyn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".24"/></linearGradient>
 <radialGradient id="tycv" cx=".4" cy=".36" r=".78"><stop offset="0" stop-color="#fff" stop-opacity=".3"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".34"/></radialGradient>
 <linearGradient id="tyband" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".75"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-<linearGradient id="tychg" x1="0" y1="0" x2="1" y2=".25"><stop offset="0" style="stop-color:color-mix(in srgb,var(--pc) 55%,#000)"/><stop offset=".18" style="stop-color:color-mix(in srgb,var(--pc) 72%,#fff)"/><stop offset=".34" style="stop-color:var(--pc)"/><stop offset=".5" style="stop-color:color-mix(in srgb,var(--pc) 55%,#fff)"/><stop offset=".68" style="stop-color:color-mix(in srgb,var(--pc) 55%,#000)"/><stop offset=".84" style="stop-color:color-mix(in srgb,var(--pc) 70%,#fff)"/><stop offset="1" style="stop-color:color-mix(in srgb,var(--pc) 70%,#000)"/></linearGradient>
+<linearGradient id="tychg" x1="0" y1="0" x2="1" y2=".25"><stop offset="0" style="stop-color:color-mix(in srgb,var(--pc) 55%,#000)"/><stop offset=".18" style="stop-color:color-mix(in srgb,var(--pc) 88%,#fff)"/><stop offset=".34" style="stop-color:var(--pc)"/><stop offset=".5" style="stop-color:color-mix(in srgb,var(--pc) 75%,#fff)"/><stop offset=".68" style="stop-color:color-mix(in srgb,var(--pc) 55%,#000)"/><stop offset=".84" style="stop-color:color-mix(in srgb,var(--pc) 85%,#fff)"/><stop offset="1" style="stop-color:color-mix(in srgb,var(--pc) 70%,#000)"/></linearGradient>
 <pattern id="typ1" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="2" cy="2.5" r=".95" fill="#fff"/><circle cx="6.5" cy="6" r=".65" fill="#FFE9A8"/><path d="M5 .8v2.2M3.9 1.9h2.2" stroke="#fff" stroke-width=".5"/></pattern>
 <pattern id="typ2" width="11" height="11" patternUnits="userSpaceOnUse"><circle cx="7.5" cy="2.5" r=".9" fill="#FFE9A8"/><circle cx="3" cy="7.5" r=".75" fill="#fff"/><path d="M8.5 8v2M7.5 9h2" stroke="#fff" stroke-width=".5"/></pattern>
 <filter id="tyblur" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="1.7"/></filter>`;
